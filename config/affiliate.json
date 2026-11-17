@@ -1,0 +1,126 @@
+{
+  "platforms": [
+    {
+      "type": "platform",
+      "id": "mercadolibre",
+      "name": "美客多联盟",
+      "description": "拉美最大电商联盟计划，高转化率，佣金比例高，拉美流量首选，出单门槛低",
+      "image": "/images/affiliate/mercadolibre.svg",
+      "promoLink": "https://partners.mercadolibre.com/"
+    },
+    {
+      "type": "platform",
+      "id": "amazon",
+      "name": "亚马逊联盟",
+      "description": "全球最大联盟网络，覆盖多个国家和地区，商品海量、信任度高、稳定变现",
+      "image": "/images/affiliate/amazon.svg",
+      "promoLink": "https://affiliate-program.amazon.com"
+    },
+    {
+      "type": "platform",
+      "id": "shopee",
+      "name": "Shopee联盟",
+      "description": "东南亚电商联盟，快速增长的市场机会，门槛低，社媒引流极易起量",
+      "image": "/images/affiliate/shopee.svg",
+      "promoLink": "https://affiliate.shopee.co.id/"
+    },
+    {
+      "type": "platform",
+      "id": "tiktokshop",
+      "name": "TikTok Shop联盟",
+      "description": "全球短视频电商联盟，短视频/直播引流转化极强，佣金灵活，当前流量红利最大",
+      "image": "/images/affiliate/tiktokshop.svg",
+      "promoLink": "https://affiliate.tiktokglobalshop.com"
+    },
+    {
+      "type": "platform",
+      "id": "clickbank",
+      "name": "ClickBank联盟",
+      "description": "数字产品头部联盟，佣金最高可达 50%-75%，虚拟品退款率低、利润空间极大",
+      "image": "/images/affiliate/clickbank.svg",
+      "promoLink": "https://www.clickbank.com/affiliates/"
+    },
+    {
+      "type": "platform",
+      "id": "awin",
+      "name": "Awin联盟",
+      "description": "欧美成熟联盟网络，上万品牌商家，服饰家居类目佣金丰厚，收款稳定合规",
+      "image": "/images/affiliate/awin.svg",
+      "promoLink": "https://www.awin.com/"
+    },
+    {
+      "type": "platform",
+      "id": "impact",
+      "name": "Impact Radius联盟",
+      "description": "出海品牌官方联盟主流载体，独立站品牌多、客单价高，长期合作收益稳定",
+      "image": "/images/affiliate/impact.svg",
+      "promoLink": "https://impact.com/"
+    },
+    {
+      "type": "platform",
+      "id": "admitad",
+      "name": "Admitad联盟",
+      "description": "俄语区、中东、中亚头部联盟，竞争小、转化率高，蓝海流量变现首选",
+      "image": "/images/affiliate/admitad.svg",
+      "promoLink": "https://www.admitad.com/affiliates/"
+    },
+    {
+      "type": "platform",
+      "id": "cj",
+      "name": "CJ Affiliate联盟",
+      "description": "老牌顶级联盟，大牌品牌资源丰富，适合精细化长期运营，单价佣金上限高",
+      "image": "/images/affiliate/cj.svg",
+      "promoLink": "https://www.cj.com/"
+    }
+  ],
+  "pageSize": 6,
+  "toolSlugs": [
+    "rate-converter",
+    "profit-calculator",
+    "listing-optimizer"
+  ],
+  "stats": [
+    {
+      "label": "平均佣金比例",
+      "value": "5%-15%",
+      "description": "根据品类不同"
+    },
+    {
+      "label": "结算周期",
+      "value": "30-60天",
+      "description": "各平台略有差异"
+    },
+    {
+      "label": "付款方式",
+      "value": "PayPal/银行",
+      "description": "支持多种方式"
+    },
+    {
+      "label": "最低提现",
+      "value": "$100起",
+      "description": "部分平台更低"
+    }
+  ],
+  "articles": [
+    {
+      "title": "如何加入美客多联盟",
+      "summary": "详细介绍美客多联盟的注册流程和审核要求",
+      "link": "#"
+    },
+    {
+      "title": "联盟推广技巧分享",
+      "summary": "分享有效的联盟推广方法和策略",
+      "link": "#"
+    },
+    {
+      "title": "多平台联盟管理技巧",
+      "summary": "如何高效管理多个联盟账号",
+      "link": "#"
+    },
+    {
+      "title": "联盟营销合规要点",
+      "summary": "了解联盟营销的合规要求和注意事项",
+      "link": "#"
+    }
+  ]
+}

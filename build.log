@@ -1,0 +1,159 @@
+▲ Next.js 16.2.9 (Turbopack)
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 7.8s
+  Running TypeScript ...
+  Finished TypeScript in 5.1s ...
+  Collecting page data using 15 workers ...
+  Generating static pages using 15 workers (0/545) ...
+  Generating static pages using 15 workers (136/545) 
+  Generating static pages using 15 workers (272/545) 
+  Generating static pages using 15 workers (408/545) 
+✓ Generating static pages using 15 workers (545/545) in 8.0s
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /_not-found
+├ ● /[locale]
+│ ├ /zh-CN
+│ ├ /en
+│ ├ /es
+│ └ [+15 more paths]
+├ ● /[locale]/account
+│ ├ /zh-CN/account
+│ ├ /en/account
+│ ├ /es/account
+│ └ [+15 more paths]
+├ ● /[locale]/affiliate
+│ ├ /zh-CN/affiliate
+│ ├ /en/affiliate
+│ ├ /es/affiliate
+│ └ [+15 more paths]
+├ ● /[locale]/blog
+│ ├ /zh-CN/blog
+│ ├ /en/blog
+│ ├ /es/blog
+│ └ [+15 more paths]
+├ ƒ /[locale]/blog/[id]
+├ ● /[locale]/community
+│ ├ /zh-CN/community
+│ ├ /en/community
+│ ├ /es/community
+│ └ [+15 more paths]
+├ ƒ /[locale]/community/[slug]
+├ ƒ /[locale]/community/post/[id]
+├ ● /[locale]/compliance
+│ ├ /zh-CN/compliance
+│ ├ /en/compliance
+│ ├ /es/compliance
+│ └ [+15 more paths]
+├ ● /[locale]/compliance/[id]
+│ ├ /zh-CN/compliance/amazon-account-health
+│ ├ /zh-CN/compliance/amazon-eu-epr
+│ ├ /zh-CN/compliance/mercado-libre-mexico-tax
+│ └ [+159 more paths]
+├ ● /[locale]/forgot-password
+│ ├ /zh-CN/forgot-password
+│ ├ /en/forgot-password
+│ ├ /es/forgot-password
+│ └ [+15 more paths]
+├ ● /[locale]/listing-optimizer
+│ ├ /zh-CN/listing-optimizer
+│ ├ /en/listing-optimizer
+│ ├ /es/listing-optimizer
+│ └ [+15 more paths]
+├ ● /[locale]/login
+│ ├ /zh-CN/login
+│ ├ /en/login
+│ ├ /es/login
+│ └ [+15 more paths]
+├ ƒ /-/opengraph-image
+├ ƒ /[locale]/platform/[slug]
+├ ● /[locale]/purchase
+│ ├ /zh-CN/purchase
+│ ├ /en/purchase
+│ ├ /es/purchase
+│ └ [+15 more paths]
+├ ● /[locale]/register
+│ ├ /zh-CN/register
+│ ├ /en/register
+│ ├ /es/register
+│ └ [+15 more paths]
+├ ƒ /[locale]/tool/[slug]
+├ ● /[locale]/tools
+│ ├ /zh-CN/tools
+│ ├ /en/tools
+│ ├ /es/tools
+│ └ [+15 more paths]
+├ ● /[locale]/tools/ai-workbench
+│ ├ /zh-CN/tools/ai-workbench
+│ ├ /en/tools/ai-workbench
+│ ├ /es/tools/ai-workbench
+│ └ [+15 more paths]
+├ ● /[locale]/tools/ai-workbench/code-dev
+│ ├ /zh-CN/tools/ai-workbench/code-dev
+│ ├ /en/tools/ai-workbench/code-dev
+│ ├ /es/tools/ai-workbench/code-dev
+│ └ [+15 more paths]
+├ ● /[locale]/tools/ai-workbench/document
+│ ├ /zh-CN/tools/ai-workbench/document
+│ ├ /en/tools/ai-workbench/document
+│ ├ /es/tools/ai-workbench/document
+│ └ [+15 more paths]
+├ ● /[locale]/tools/ai-workbench/image
+│ ├ /zh-CN/tools/ai-workbench/image
+│ ├ /en/tools/ai-workbench/image
+│ ├ /es/tools/ai-workbench/image
+│ └ [+15 more paths]
+├ ● /[locale]/tools/ai-workbench/pdf-summary
+│ ├ /zh-CN/tools/ai-workbench/pdf-summary
+│ ├ /en/tools/ai-workbench/pdf-summary
+│ ├ /es/tools/ai-workbench/pdf-summary
+│ └ [+15 more paths]
+├ ● /[locale]/tools/ai-workbench/video-translate
+│ ├ /zh-CN/tools/ai-workbench/video-translate
+│ ├ /en/tools/ai-workbench/video-translate
+│ ├ /es/tools/ai-workbench/video-translate
+│ └ [+15 more paths]
+├ ● /[locale]/tools/keyword-lab
+│ ├ /zh-CN/tools/keyword-lab
+│ ├ /en/tools/keyword-lab
+│ ├ /es/tools/keyword-lab
+│ └ [+15 more paths]
+├ ● /[locale]/tools/product-analysis
+│ ├ /zh-CN/tools/product-analysis
+│ ├ /en/tools/product-analysis
+│ ├ /es/tools/product-analysis
+│ └ [+15 more paths]
+├ ƒ /-/twitter-image
+├ ○ /admin/affiliate
+├ ○ /admin/articles
+├ ƒ /admin/articles/[id]/edit
+├ ○ /admin/articles/new
+├ ○ /admin/country
+├ ○ /admin/dashboard
+├ ○ /admin/leads
+├ ○ /admin/login
+├ ○ /admin/policies
+├ ƒ /admin/policies/[id]/edit
+├ ○ /admin/policies/new
+├ ○ /admin/settings
+├ ○ /admin/source
+├ ○ /admin/tags
+├ ƒ /api/affiliate
+├ ƒ /api/community/posts
+├ ƒ /api/leads
+├ ƒ /api/market/keyword
+├ ƒ /api/market/rates
+├ ƒ /api/og
+├ ○ /icon.svg
+├ ○ /robots.txt
+└ ○ /sitemap.xml
+
+
+ƒ Proxy (Middleware)
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+

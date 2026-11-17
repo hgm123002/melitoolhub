@@ -1,0 +1,1 @@
+const fs=require('fs');const p=require('path').join(__dirname,'config','tools.ts');let c=fs.readFileSync(p,'utf8');if(!c.includes('ai-workbench')){c=c.replace("icon: 'Database' },","icon: 'Database' },\n  { slug: 'ai-workbench', name: 'AI智能工作台', description: '文档处理、图片OCR、PDF归纳、代码开发、视频字幕翻译', icon: 'Brain' },");fs.writeFileSync(p,c,'utf8');console.log('OK');}else{console.log('跳过');}

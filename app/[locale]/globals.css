@@ -1,0 +1,228 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* 强制亮色模式，避免暗色模式检测导致的闪烁 */
+html,
+body {
+  background-color: #ffffff !important;
+  color: #171717 !important;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 页面切换过渡动画 - 避免黑屏 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page-fade-in {
+  animation: fadeIn 0.25s ease-out;
+}
+
+.page-slide-up {
+  animation: slideUp 0.3s ease-out;
+}
+
+/* 骨架屏动画 */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skeleton-base {
+  background: linear-gradient(90deg, #f3f4f6 25%, #e5e7eb 50%, #f3f4f6 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* 骨架屏变种 - 浅色 */
+.skeleton-light {
+  background: linear-gradient(90deg, #f9fafb 25%, #f3f4f6 50%, #f9fafb 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.8s infinite;
+}
+
+/* 骨架屏变种 - 深色（用于 navbar 等） */
+.skeleton-dark {
+  background: linear-gradient(90deg, #1e3a5f 25%, #2a4a75 50%, #1e3a5f 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.8s infinite;
+}
+
+/* 通用元素平滑过渡 */
+a,
+button {
+  transition:
+    color 0.15s ease,
+    background-color 0.15s ease,
+    opacity 0.15s ease;
+}
+
+/* 滚动条美化（可选） */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* ==========================================================================
+   中日韩 / 泰文标题行距基线
+   CJK 与泰文等价于「方块字」，大字号换行时行距按西文比例（1.1~1.15）会上下
+   粘连。这里统一给到 1.35，并让浏览器做孤儿行处理，保证每一页标题行距一致。
+   ========================================================================== */
+html[lang^="zh"] :is(h1, h2, h3, h4),
+html[lang^="ja"] :is(h1, h2, h3, h4),
+html[lang^="ko"] :is(h1, h2, h3, h4),
+html[lang^="th"] :is(h1, h2, h3, h4) {
+  line-height: 1.35;
+  text-wrap: pretty;
+}
+
+/* ==========================================================================
+   文章正文排版（SEO 长文可读性）
+   仅作用于 .article-body，不影响其他页面
+   ========================================================================== */
+.article-body {
+  color: #1f2d3d;
+  font-size: 17px;
+  line-height: 1.85;
+}
+.article-body > * + * {
+  margin-top: 1.05em;
+}
+.article-body h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a3a5c;
+  margin-top: 2.2em;
+  margin-bottom: 0.6em;
+  padding-bottom: 0.35em;
+  border-bottom: 2px solid #e6edf5;
+  line-height: 1.35;
+}
+.article-body h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #1a3a5c;
+  margin-top: 1.6em;
+  margin-bottom: 0.4em;
+}
+.article-body p {
+  margin: 0.9em 0;
+}
+.article-body ul,
+.article-body ol {
+  padding-left: 1.4em;
+  margin: 0.9em 0;
+}
+.article-body ul { list-style: disc; }
+.article-body ol { list-style: decimal; }
+.article-body li {
+  margin: 0.42em 0;
+}
+.article-body li::marker {
+  color: #38bdf8;
+}
+.article-body strong {
+  color: #0f2038;
+  font-weight: 600;
+}
+.article-body a {
+  color: #0284c7;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+.article-body a:hover {
+  color: #0369a1;
+}
+.article-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.4em 0;
+  font-size: 15px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px #e5eaf1;
+}
+.article-body thead th {
+  background: #f1f5f9;
+  text-align: left;
+  font-weight: 600;
+  color: #1a3a5c;
+}
+.article-body th,
+.article-body td {
+  padding: 0.7em 0.9em;
+  border-bottom: 1px solid #eef2f7;
+  text-align: left;
+  vertical-align: top;
+}
+.article-body tbody tr:last-child td {
+  border-bottom: none;
+}
+.article-body tbody tr:nth-child(even) {
+  background: #fafcfe;
+}
+.article-body blockquote {
+  border-left: 3px solid #38bdf8;
+  background: #f0f9ff;
+  padding: 0.8em 1.1em;
+  margin: 1.2em 0;
+  color: #0f3a52;
+  border-radius: 0 8px 8px 0;
+}
+.article-body img {
+  border-radius: 12px;
+  margin: 1.2em auto;
+}
+.article-body hr {
+  border: none;
+  border-top: 1px solid #e5eaf1;
+  margin: 2em 0;
+}
