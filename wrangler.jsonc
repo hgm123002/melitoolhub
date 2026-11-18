@@ -1,0 +1,20 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "melitoolhub",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2026-11-01",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "observability": {
+    "enabled": true
+  },
+  // 用 Worker Routes 挂到已有 DNS 记录上（不需要 DNS 写权限，也不影响现有解析）
+  // zone 内 @ 与 www 的 A 记录已 proxied 到 Cloudflare，路由匹配后由 Worker 接管
+  "routes": [
+    { "pattern": "melitoolhub.com/*", "zone_name": "melitoolhub.com" },
+    { "pattern": "www.melitoolhub.com/*", "zone_name": "melitoolhub.com" }
+  ]
+}
